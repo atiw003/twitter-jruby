@@ -2,17 +2,17 @@ require "rake"
 require "jeweler"
 
 Jeweler::Tasks.new do |gem|
-  gem.name              = "twitter"
-  gem.summary           = %Q{wrapper for the twitter api}
-  gem.email             = "nunemaker@gmail.com"
-  gem.homepage          = "http://github.com/jnunemaker/twitter"
-  gem.authors           = ["John Nunemaker", "Wynn Netherland"]
+  gem.name              = "twitter-jruby"
+  gem.summary           = %Q{wrapper for the twitter api on JRuby}
+  gem.email             = "fujibee@gmail.com"
+  gem.homepage          = "http://github.com/fujibee/twitter-jruby"
+  gem.authors           = ["John Nunemaker", "Wynn Netherland", "Koichi Fujikawa"]
   gem.files             = FileList["[A-Z]*", "{examples,lib,test}/**/*"]
 
   gem.add_dependency("oauth", ">= 0.3.5")
   gem.add_dependency("hashie", "~> 0.2.0")
   gem.add_dependency("httparty", "~> 0.5.0")
-  gem.add_dependency("yajl-ruby", "~> 0.7.0")
+  gem.add_dependency("json-jruby")
 
   gem.add_development_dependency("shoulda", "~> 2.10.0")
   gem.add_development_dependency("jnunemaker-matchy", "~> 0.4.0")
