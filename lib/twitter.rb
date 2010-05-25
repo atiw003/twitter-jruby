@@ -2,6 +2,7 @@ require "forwardable"
 require "oauth"
 require "hashie"
 require "httparty"
+require "json"
 
 module Twitter
   include HTTParty
